@@ -1,0 +1,74 @@
+.header{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.header_atajos{
+    position: absolute;
+    top: 63px;
+    background-color: rgb(0, 0, 0);
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+.header_lista_atajos{
+    font-size: var(--primary-font-size);
+}
+.header_lista_atajos a::after{
+    content: none;
+}
+.header_lista_atajos a{
+    color: rgb(255, 255, 255);
+}
+.header_lista_atajos a:hover{
+    color: rgb(153, 188, 235);
+}
+.header_lista_atajos a:active{
+    color: rgb(228, 175, 201);
+}
+.nav_toggle{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: flex-end;
+    width: 60%;
+}
+.nav_toggle span{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+}
+.close span{
+    transform: rotate(45deg) translate(0px, 0px);
+}
+.close span:nth-child(2){
+    display: none;
+}
+.close span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px, 1px);
+} 
+.open {
+    transform: translateX(0);
+}
+.gran_titulo{
+    width: 100%;
+    padding-top: 40px;
+}
+.principal{
+    width: 100%;
+}
+.main{
+    margin: 20px;
+}
+.imagenes_main img{
+    width: 60%;
+}
+.description{
+    width: 60%;
+}

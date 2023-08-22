@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planets</title>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../estilos/style_principal.css">
+        <link rel="stylesheet" href="../estilos/mobile.css" media="screen and (max-width: 600px)">
+        <link rel="stylesheet" href="../estilos/tamaño_2.css" media="screen and (max-width: 800px)">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Borel&family=Handjet:wght@200&display=swap" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    </head>
+    <body class="fondo_1">
+        <header class="header">
+            <figure class="header_logo">
+                <a href="https://www.nasa.gov/" target="_blank"><img src="../imagenes/NASA-Logo-PNG-Image.png" alt="Logo"></a>
+            </figure> 
+                <div class="header_atajos" id="_atajos">
+                    <li class="header_lista_atajos"><a href="../html/nasa.html" target="_blank"> <i class="fas fa-user-astronaut"></i> Home</a></li>
+                    <li class="header_lista_atajos"><a href="#" target="_blank"> <i class="fas fa-globe-americas"></i> Planets </a></li>
+                    <li class="header_lista_atajos"><a href="../html/missions.html" target="_blank"> <i class="fas fa-space-shuttle"></i> Missions </a></li>
+                </div>
+                <div class="nav_toggle" id="_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <script src="../codigo/codigo.js"></script>
+        </header>
+        
+        <div class="body_planets"> 
+        <img class='object'        src="../imagenes/sun.png"     alt="SUN"      id='sun'>
+        <img class='object planet' src="../imagenes/Mercury.png" alt="MERCURY"  id='mercury'>
+        <img class='object planet' src="../imagenes/venus.png"   alt="VENUS"    id='venus'>
+        <img class='object planet' src="../imagenes/Earth.png"   alt="EARTH"    id=earth>
+        <img class='object planet' src="../imagenes/Mars.png"    alt="MARS"     id='mars'>
+        <img class='object planet' src="../imagenes/Jupiter.png" alt="JUPITER"  id='jupiter'>
+        <img class='object planet' src="../imagenes/saturno.png" alt="SATURNO"  id='saturn'>
+        <img class='object planet' src="../imagenes/uranus.png"  alt="URANUS"   id='uranus'>
+        <img class='object planet' src="../imagenes/Neptune.png" alt="NEPTUNE"  id='neptune'>
+        <div class='object'                                                     id="moon" ></div>
+
+        <div class='object p-orbit'></div>
+        <div class='object p-orbit'></div>
+        <div class='object p-orbit'></div>
+        <div class='object p-orbit'></div>
+        <div class='object p-orbit'></div>
+        <div class='object p-orbit'></div>
+        <div class='object p-orbit'></div>
+        <div class='object p-orbit'></div>
+        <div class='object' id="m-orbit"></div>  
+
+        <img src="../imagenes/asteroide.png" alt="ASTEROIDE" class="object" id="belt">
+        <script src='../codigo/script.js'></script>
+        </div>
+
+        <footer class="footer">
+            <span class="footer_texto">Redes Sociales <i class="fas fa-arrow-right"></i> </span> 
+            <ul class="footer_redes_sociales">
+                <li class="footer_lista_redes_sociales"><a href="https://www.facebook.com/NASA/?locale=es_LA" target="_blank"><img src="https://www.pngmart.com/files/15/Circle-Facebook-Logo-PNG-Picture.png"alt="Facebook"></a></li>
+                <li class="footer_lista_redes_sociales"><a href="https://www.instagram.com/nasa/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png"alt="Instagram"></a></li>
+            </ul>   
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,332 @@
+:root{
+    --primary-font-size: 1.8rem;
+    --segundary-font-size: 2.5rem;
+    --terciary-font-size: 2.1rem
+}
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}       
+html{
+    font-size: 62.5%;
+    /* background-image: url(./5445.jpg); */
+
+}
+.fondo_1{
+    font-size: 62.5%;
+    background-image: url(../imagenes/fondo_1.jpg);
+}
+header{
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    top: 0px;
+    background-color: rgba(150, 150, 167, 0.342);
+    border-bottom: solid 3px black;
+}
+.header_logo{
+    text-align: left;
+    width: 40%;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+.header_logo img{
+    height: 6rem;
+    width: 20rem;
+}
+.header_atajos{
+    width: 100%;
+    text-align: right;
+}
+.header_lista_atajos{
+    display: inline-block;
+    font-size: var(--primary-font-size);
+    padding-right: 15px;
+}
+.header_lista_atajos a{
+    text-decoration: none;
+    color: white;
+    font-family: oswald, helvetica, arial, sans-serif;
+}
+.header_lista_atajos a:hover{
+    color: black;
+}
+.header_lista_atajos a:active{
+    color: rgb(0, 0, 68);
+}
+.header_lista_atajos a::after{
+    content:  " | " ;
+    color: black;
+}
+.granContenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gran_titulo{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: 7vw;
+    color: white;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+}
+.principal{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.principal img{
+    width: 40%;
+    transition: all 0.4s linear;
+}
+.principal img:hover{
+    width: 80%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: solid 2px black;
+    background-color: rgba(255,255,255,0.3);
+    margin: 0px 50px 50px 50px;
+    -webkit-backdrop-filter: blur(10px);backdrop-filter: blur(2px);
+}
+.titulo_1{
+    font-size: var(--segundary-font-size);
+    color: white;
+    font-family: 'Audiowide', cursive;
+    padding-top: 10px;
+}
+.titulo_2{
+    font-size: var(--terciary-font-size);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.texto_1{
+    margin: 5px 15px 5px 15px;
+    font-size: var(--primary-font-size);
+    text-align: justify;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.imagenes_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagenes_main img{
+    min-width: 250px;
+    width: 30%;
+    border-radius: 30px;
+    margin: 10px 10px 0px 10px;
+    box-shadow: 0px 0px 10px 0px white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.description{
+    font-size: var(--primary-font-size);
+    min-width: 250px;
+    padding-bottom: 10px;
+    width: 30%;
+    text-align: justify;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.read_more{
+    border: none;
+    border-radius: 40px;
+    padding: 15px 15px;
+    font-size: 2.3em;
+    font-family: 'Audiowide', cursive;
+    background-color: black;
+    box-shadow: 0px 0px 10px 2px white;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.read_more:hover{
+    box-shadow: none;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px black;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    transition-property: all;
+    transition-duration: 3s;
+}
+.read_more:active{
+    box-shadow: none;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 10px 2px white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+}
+.super_contenedor{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contenedor_1{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    width: 50%;
+}
+.contenedor_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.imagenes_main_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagenes_main_2 img{
+    min-width: 200px;
+    width: 30%;
+    border-radius: 30px;
+    margin: 10px 10px 0px 10px;
+    box-shadow: 0px 0px 10px 0px white;
+}
+.footer{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    background-color: rgba(150, 150, 167, 0.342);
+    border-top: solid 3px black;
+}
+.footer_texto{
+    width: 70%;
+    font-size: var(--segundary-font-size);
+    font-family: 'Audiowide', cursive;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.footer_redes_sociales{
+    width:30%;
+    text-align: right;
+}
+.footer_lista_redes_sociales{
+    display: inline-block;
+    padding-right: 10px;
+}
+.footer_redes_sociales img{
+    width: 30px;
+} 
+/* PLANETS */
+.body_planets{
+    background-image: url(../imagenes/fondo_1.jpg);
+    margin: 0;
+    padding: 0;
+    height: 200vmin;
+    position: relative;
+}
+.object{
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* transform: translateY(0vmin); */
+}
+.p-orbit,#m-orbit{
+    border:0.1vmin solid lightgrey;
+    opacity:0.5;
+    background: transparent;
+}
+#belt{
+    height: 97vmin;
+    width: 97vmin;
+    animation: spin 50s infinite linear;
+    margin-top: 50vmin;
+}
+@keyframes spin{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+#m-orbit{
+    height: 8vmin;
+    width: 8vmin;
+}
+.planet,#moon{
+    z-index:100;
+}
+
+#sun{
+    height: 12vmin;
+    width: 12vmin;
+}
+#moon{
+    height: 1vmin;
+    width: 1vmin;
+    background-color: white;
+}
+#mercury{
+    height: 2vmin;
+    width: 2vmin;
+}
+#venus{
+    height: 3vmin;
+    width: 3vmin;
+}
+#earth{
+    height: 4vmin;
+    width: 4vmin;
+}
+#mars{
+    height: 3.5vmin;
+    width: 3.5vmin;
+}
+#jupiter{
+    height: 8vmin;
+    width: 8vmin;
+}
+#saturn{
+    height: 10vmin;
+    width: 18vmin;
+    border-radius: 0%;
+}
+#uranus{
+    height: 6vmin;
+    width: 6vmin;
+}
+#neptune{
+    height: 5vmin;
+    width: 5vmin;
+}
